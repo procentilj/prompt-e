@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  position: relative;
+  top: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3% 5% 5%;
+  background-color: #003049;
+}
+
+.container {
+  padding: min(50px, 8%);
+  border-radius: 20px;
+  background-color: #669bbc;
+  color: #fdf0d5;
+  font-family: "Roboto Slab";
+}
+.container * {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+#main-text {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-text h1 {
+  font-family: "IBM Plex Mono";
+  text-align: center;
+  color: #fdf0d5;
+  font-size: clamp(0.5rem, 8vw, 4rem);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #669bbc;
+  width: 12ch;
+  animation: typing 2s steps(12) forwards, blinking-cursor 0.75s step-end infinite;
+}
+#main-text p {
+  font-family: "IBM Plex Mono";
+  text-align: center;
+  color: #fdf0d5;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blinking-cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #669bbc;
+  }
+}
