@@ -28,7 +28,7 @@ body {
   font-family: "Roboto Slab";
 }
 .container * {
-  font-size: clamp(0.8rem, 4vw, 2rem);
+  font-size: clamp(0.8rem, 3vw, 2rem);
 }
 
 #main-text {
